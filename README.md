@@ -233,3 +233,103 @@ group by 1,ref_da.ref_date
 having date_diff>=20
 order by 4 Desc;.
 ```
+## 4. 👨‍💼 Employee Analysis
+**Employee with Most Orders Handled**:
+```sql
+select 
+	employee_id,
+    (select employee_name from employee e
+    where e.employee_id=o.employee_id ) as employee_name ,
+    count(distinct order_id) as total_order,
+    sum(total_amount) as total_amount,
+   round( avg(total_amount),1) as avg_order_value
+ from orders o
+ group by 1;
+```
+**Department Revenue Contribution**:
+```sql
+SELECT 
+    e.department,
+    COUNT(DISTINCT order_id) AS total_order,
+    SUM(total_amount) AS total_amount,
+    ROUND(AVG(total_amount), 1) AS avg_order_value
+FROM
+    orders o
+left join employee e
+on o.employee_id=e.employee_id
+GROUP BY 1;
+```
+**Employee Sales Performance Ranking**:
+```sql
+SELECT 
+    employee_id,
+    COUNT(DISTINCT order_id) AS total_order,
+    SUM(total_amount) AS total_amount,
+    row_number() over(order by sum(total_amount) desc ) as sales_rank
+FROM
+    orders o
+GROUP BY 1;
+```
+**Monthly Employee Sales Comparison**:
+```sql
+select 
+Month (order_date) as month,
+Year (order_date) as year,
+employee_id,
+count(distinct order_id) as total_order,
+sum(total_amount) as total_amount,
+lag	(sum(total_amount)) over( order by year(order_date) , month (order_date)) as previous_months
+
+from orders
+group by 1,2,3
+order by 2,1;
+```
+## 5. 📦 Product Analysis
+**Average Product Price**:
+```sql
+select 
+*,
+round(avg(Price) over(),1) as avg_product_price
+from product
+;
+```
+**Top 5 Products by Revenue**:
+```sql
+select 
+o.product_id,
+product_name,
+sum(quantity),
+sum(total_amount) as amount
+from orders o
+join product p 
+on o.product_id=p.product_id
+group by 1,2
+order by 4 desc
+limit 5;
+```
+**Bottom 5 Products (Least Sold)**:
+```sql
+select 
+o.product_id,
+product_name,
+sum(quantity),
+sum(total_amount) as amount
+from orders o
+join product p 
+on o.product_id=p.product_id
+group by 1,2
+order by 4 asc
+limit 5;
+```
+**Category Revenue Share (%)**:
+```sql
+select 
+Category,
+sum(quantity),
+sum(total_amount) as amount
+from orders o
+join product p 
+on o.product_id=p.product_id
+group by 1
+order by 3 desc;
+```
