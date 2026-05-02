@@ -135,3 +135,101 @@ FROM
 GROUP BY 1 , 2
 ORDER BY 2 , 1;
 ```
+### 3. 👥 Customer Analysis
+**City with Most Orders**:
+```sql
+select 
+* 
+from (select city, 
+		sum(total_amount)
+	from customer c 
+		join orders o 
+        on o.customer_id = c.customer_id
+	group by 1
+    order by 2 desc) as co;
+```
+**Top 5 Customers by Revenue**:
+```sql
+SELECT 
+    *
+FROM
+    (SELECT 
+        o.customer_id, customer_name, SUM(total_amount)
+    FROM
+        customer c
+    JOIN orders o ON o.customer_id = c.customer_id
+    GROUP BY 1 , 2
+    ORDER BY 3 DESC) AS co
+LIMIT 5;
+```
+**Largest Region by Customer Base**:
+```sql
+SELECT 
+    *
+FROM
+    (SELECT 
+        city, COUNT(DISTINCT c.customer_id), SUM(total_amount)
+    FROM
+        customer c
+    JOIN orders o ON o.customer_id = c.customer_id
+    GROUP BY 1
+    ORDER BY 3 DESC) AS co;
+```
+**Customers with no orders**:
+```sql
+SELECT 
+    *
+FROM
+    (SELECT 
+        city, COUNT(DISTINCT c.customer_id) as total_customer, SUM(total_amount)
+    FROM
+        customer c
+    JOIN orders o ON o.customer_id = c.customer_id
+       GROUP BY 1
+       having COUNT(DISTINCT c.customer_id) <1
+    ORDER BY 3 DESC) AS co;
+```
+**Customer Lifetime Value (CLV)**:
+```sql
+SELECT 
+customer_id,
+count(distinct order_id) as total_Order ,
+sum(quantity) as total_quantity,
+avg(total_amount) as avg_order_value,
+sum(total_amount) as total_spent
+FROM orders
+group by 1
+order by 5 desc;
+```
+**New vs Returning Customers**:
+```sql
+SELECT 
+    customer_id,
+    COUNT(order_id) AS total_order,
+    SUM(total_amount) total_amount,
+    IF(COUNT(order_id) > 1,
+        'Retarning',
+        'New') AS customer_status
+FROM
+    orders
+GROUP BY 1
+;.
+```
+**Customers with No Orders in Last 20+ Days**:
+```sql
+with ref_da as(
+select 
+max(order_date) as ref_date 
+from orders
+)
+select
+customer_id,
+ min(order_date) as first_order,
+ max(order_date) as last_order,
+datediff (ref_da.ref_date,max(order_date)) as date_diff
+from orders
+cross join  ref_da
+group by 1,ref_da.ref_date
+having date_diff>=20
+order by 4 Desc;.
+```
