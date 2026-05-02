@@ -423,3 +423,46 @@ FROM COHORT_CALC
 GROUP BY COHORT
 ORDER BY COHORT;
 ```
+## 📌 Key Findings
+*   **Sales Trends:** Monthly and yearly breakdowns reveal peak sales seasons and growth patterns.
+*   **Customer Segmentation:** RFM analysis identifies **Champions, Loyal, At-Risk, and Dormant** customers.
+*   **Cohort Retention:** Cohort analysis tracks how well the business retains customers over time.
+*   **Top Performers:** Identified **top 5 customers**, best-selling products, and highest-revenue categories.
+*   **Employee Insights:** Department-wise and individual employee performance ranked by revenue.
+*   **Growth Tracking:** Month-over-month growth rate and **3-month moving average** highlight sales momentum.
+
+---
+
+## 🚀 How to Use
+1.  **Clone the Repository**
+    
+```bash
+    git clone [https://github.com/ashikulislam25/super-store-sales-analysis.git](https://github.com/ashikulislam25/super-store-sales-analysis.git)
+    ```
+2.  **Set Up the Database**
+    *   Import your dataset into MySQL.
+    *   Run `USE super_store;` to select the database.
+3.  **Run the Queries**
+    *   Execute queries section by section from the SQL file.
+    *   Each section is clearly labeled with comments.
+4.  **Explore Further**
+    *   Modify filters, date ranges, or groupings to uncover new insights.
+
+---
+
+## 🛠️ Tools & Technologies
+*   **Database:** MySQL
+*   **Concepts Used:** Joins, Aggregations, **Window Functions** (LAG, RANK, NTILE, SUM OVER), **CTEs**, Date Functions, CASE statements, Subqueries.
+
+---
+
+## ✍️ Author
+**ashikulislam25**  
+This project is part of my **data analyst portfolio**, showcasing practical SQL skills for real-world business analysis.
+
+🔗 **GitHub:** [github.com/ashikulislam25](https://github.com/ashikulislam25)
+
+---
+
+## ⭐ Support
+If you found this project helpful, please give it a ⭐ on GitHub — it means a lot!
