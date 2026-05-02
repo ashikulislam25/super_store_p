@@ -1,0 +1,351 @@
+customer_id,customer_name,city,region
+CUST0001,Nancy Stewart,St. Louis,Missouri
+CUST0002,Karen Gonzalez,Fayetteville,North Carolina
+CUST0003,Barbara Wood,Newark,New Jersey
+CUST0004,Rebecca Gutierrez,Fresno,California
+CUST0005,Janet Ruiz,Sacramento,California
+CUST0006,Donna Reed,Los Angeles,California
+CUST0007,Patrick Kelly,Baltimore,Maryland
+CUST0008,Emily Torres,Las Vegas,Nevada
+CUST0009,Larry Martinez,Indianapolis,Indiana
+CUST0010,Scott Green,Cincinnati,Ohio
+CUST0011,Steven Reed,Colorado Springs,Colorado
+CUST0012,Alexander King,San Jose,California
+CUST0013,Kathleen Scott,Louisville,Kentucky
+CUST0014,Susan Harris,Arlington,Texas
+CUST0015,Scott Roberts,Colorado Springs,Colorado
+CUST0016,Joseph Watson,Garland,Texas
+CUST0017,Elizabeth Walker,Riverside,California
+CUST0018,Kenneth Wright,Henderson,Nevada
+CUST0019,Jonathan James,Winston-Salem,North Carolina
+CUST0020,Matthew Jackson,Anaheim,California
+CUST0021,George Stewart,El Paso,Texas
+CUST0022,Frank Gray,Colorado Springs,Colorado
+CUST0023,Eric James,St. Louis,Missouri
+CUST0024,George Collins,Aurora,Illinois
+CUST0025,Charles Ramirez,Oklahoma City,Oklahoma
+CUST0026,Carol Adams,Baton Rouge,Louisiana
+CUST0027,Heather Gray,Anaheim,California
+CUST0028,Carol Morgan,Birmingham,Alabama
+CUST0029,Rachel Rogers,Birmingham,Alabama
+CUST0030,George Brown,Fort Wayne,Indiana
+CUST0031,Donna Brown,Tacoma,Washington
+CUST0032,Angela Perry,Omaha,Nebraska
+CUST0033,Heather Torres,Nashville,Tennessee
+CUST0034,Gary Harris,Lubbock,Texas
+CUST0035,Stephen Scott,Phoenix,Arizona
+CUST0036,Christopher Lee,Birmingham,Alabama
+CUST0037,Carol Perry,New York,New York
+CUST0038,Maria Hernandez,San Antonio,Texas
+CUST0039,Patricia Gonzalez,Spokane,Washington
+CUST0040,Ashley Castillo,Tacoma,Washington
+CUST0041,Deborah Harris,Lincoln,Nebraska
+CUST0042,Sharon Ramos,Lexington,Kentucky
+CUST0043,Frank Clark,Corpus Christi,Texas
+CUST0044,Dennis Patel,Cincinnati,Ohio
+CUST0045,Susan Rodriguez,Laredo,Texas
+CUST0046,Debra Carter,Bakersfield,California
+CUST0047,Ronald Wright,Jersey City,New Jersey
+CUST0048,Justin Ward,Indianapolis,Indiana
+CUST0049,Susan Mendoza,Fort Wayne,Indiana
+CUST0050,Alexander Davis,Atlanta,Georgia
+CUST0051,Matthew Anderson,Modesto,California
+CUST0052,Sharon Gutierrez,Scottsdale,Arizona
+CUST0053,Kevin Phillips,Washington,DC
+CUST0054,Patrick Brown,Seattle,Washington
+CUST0055,Pamela Flores,Colorado Springs,Colorado
+CUST0056,Gary Lewis,Irving,Texas
+CUST0057,Linda Jimenez,Honolulu,Hawaii
+CUST0058,Elizabeth Foster,Columbus,Ohio
+CUST0059,Katherine Howard,Toledo,Ohio
+CUST0060,Cynthia Allen,Aurora,Colorado
+CUST0061,Laura Brown,Cincinnati,Ohio
+CUST0062,Kenneth Nguyen,San Diego,California
+CUST0063,Donna Parker,Madison,Wisconsin
+CUST0064,Steven Scott,Chicago,Illinois
+CUST0065,Richard Rivera,Austin,Texas
+CUST0066,Christopher Taylor,Akron,Ohio
+CUST0067,Thomas Robinson,Washington,DC
+CUST0068,Heather King,Las Vegas,Nevada
+CUST0069,Christine Jackson,Boise,Idaho
+CUST0070,Jason Gray,Hialeah,Florida
+CUST0071,Dorothy Jenkins,Fayetteville,North Carolina
+CUST0072,Heather Perez,New York,New York
+CUST0073,Barbara Sanchez,Charlotte,North Carolina
+CUST0074,Christine Cook,Milwaukee,Wisconsin
+CUST0075,David Robinson,Fort Worth,Texas
+CUST0076,Amy Flores,Colorado Springs,Colorado
+CUST0077,Robert Powell,St. Petersburg,Florida
+CUST0078,Timothy Nguyen,Milwaukee,Wisconsin
+CUST0079,Stephen Turner,Durham,North Carolina
+CUST0080,Nicholas Morris,Glendale,Arizona
+CUST0081,Gary Hughes,Honolulu,Hawaii
+CUST0082,Pamela Thomas,Laredo,Texas
+CUST0083,Jack Jimenez,Plano,Texas
+CUST0084,Jessica Gray,Winston-Salem,North Carolina
+CUST0085,Ashley Mendoza,Montgomery,Alabama
+CUST0086,Carolyn Allen,Philadelphia,Pennsylvania
+CUST0087,Emily Edwards,North Las Vegas,Nevada
+CUST0088,Jack Foster,St. Petersburg,Florida
+CUST0089,Jennifer Morris,San Bernardino,California
+CUST0090,Stephanie Moore,Irvine,California
+CUST0091,Richard Sanchez,San Antonio,Texas
+CUST0092,Sarah Hughes,Lexington,Kentucky
+CUST0093,David Bailey,Phoenix,Arizona
+CUST0094,Andrew Mendoza,Durham,North Carolina
+CUST0095,Pamela Ross,New York,New York
+CUST0096,Brian Perez,Colorado Springs,Colorado
+CUST0097,Jeffrey Lopez,Norfolk,Virginia
+CUST0098,Shirley Turner,Houston,Texas
+CUST0099,Karen Bennett,Indianapolis,Indiana
+CUST0100,Barbara Murphy,Buffalo,New York
+CUST0101,Christopher Moore,New York,New York
+CUST0102,Joshua Powell,Richmond,Virginia
+CUST0103,Linda Baker,Plano,Texas
+CUST0104,Betty Ross,Seattle,Washington
+CUST0105,Jason Jenkins,Glendale,Arizona
+CUST0106,Daniel Hill,Des Moines,Iowa
+CUST0107,Eric Howard,Arlington,Texas
+CUST0108,John Brooks,Winston-Salem,North Carolina
+CUST0109,Donald Robinson,Santa Ana,California
+CUST0110,Ryan Baker,San Diego,California
+CUST0111,Richard Peterson,Irving,Texas
+CUST0112,Patricia Patel,Mesa,Arizona
+CUST0113,Mary Reed,Tampa,Florida
+CUST0114,William Cook,Riverside,California
+CUST0115,Amanda Davis,Glendale,Arizona
+CUST0116,Rachel Roberts,Arlington,Texas
+CUST0117,Nancy Scott,Austin,Texas
+CUST0118,Anna Edwards,Plano,Texas
+CUST0119,Catherine Moore,Richmond,Virginia
+CUST0120,Patrick Jones,Gilbert,Arizona
+CUST0121,Raymond Ramirez,Mesa,Arizona
+CUST0122,Amanda Turner,San Diego,California
+CUST0123,Emily Foster,Tampa,Florida
+CUST0124,Gregory Murphy,Raleigh,North Carolina
+CUST0125,Patrick Baker,Laredo,Texas
+CUST0126,Rachel Price,Des Moines,Iowa
+CUST0127,Brian Carter,Aurora,Illinois
+CUST0128,Melissa Jimenez,San Francisco,California
+CUST0129,Jacob Wood,San Jose,California
+CUST0130,Debra Brooks,Tucson,Arizona
+CUST0131,Charles Allen,Philadelphia,Pennsylvania
+CUST0132,Donald Miller,Seattle,Washington
+CUST0133,Charles Howard,San Bernardino,California
+CUST0134,Cynthia Castillo,Modesto,California
+CUST0135,Jennifer Bennett,Atlanta,Georgia
+CUST0136,Betty Turner,Jacksonville,Florida
+CUST0137,Richard Brown,Philadelphia,Pennsylvania
+CUST0138,Elizabeth James,Reno,Nevada
+CUST0139,Brandon King,Winston-Salem,North Carolina
+CUST0140,Kenneth Parker,Tucson,Arizona
+CUST0141,Brian Flores,New York,New York
+CUST0142,Jeffrey Kim,San Jose,California
+CUST0143,Thomas Murphy,Scottsdale,Arizona
+CUST0144,Jennifer Kelly,Atlanta,Georgia
+CUST0145,Nicholas Adams,Mesa,Arizona
+CUST0146,Jessica Lewis,Oklahoma City,Oklahoma
+CUST0147,Steven Brown,Santa Ana,California
+CUST0148,Thomas Nguyen,Milwaukee,Wisconsin
+CUST0149,Brenda Harris,Modesto,California
+CUST0150,Charles Cox,Indianapolis,Indiana
+CUST0151,Dennis Lewis,Corpus Christi,Texas
+CUST0152,Alexander Jackson,St. Petersburg,Florida
+CUST0153,Karen Jones,Louisville,Kentucky
+CUST0154,Amy Peterson,Reno,Nevada
+CUST0155,Kimberly Gonzalez,Las Vegas,Nevada
+CUST0156,Samantha Scott,Greensboro,North Carolina
+CUST0157,Amy Martin,Richmond,Virginia
+CUST0158,Dorothy Morgan,San Antonio,Texas
+CUST0159,Ronald Parker,Montgomery,Alabama
+CUST0160,Anna Lopez,Des Moines,Iowa
+CUST0161,Richard Cooper,Greensboro,North Carolina
+CUST0162,Richard James,Modesto,California
+CUST0163,Rebecca Allen,Pittsburgh,Pennsylvania
+CUST0164,Susan Peterson,Nashville,Tennessee
+CUST0165,Sharon Myers,Akron,Ohio
+CUST0166,Kathleen Collins,Arlington,Texas
+CUST0167,Patricia James,Garland,Texas
+CUST0168,Timothy Morris,Plano,Texas
+CUST0169,Elizabeth Howard,Long Beach,California
+CUST0170,Samuel Perry,Colorado Springs,Colorado
+CUST0171,Betty Martinez,Denver,Colorado
+CUST0172,Jerry Roberts,Mesa,Arizona
+CUST0173,Brandon Lewis,Portland,Oregon
+CUST0174,Emma Long,San Bernardino,California
+CUST0175,Margaret Campbell,Irvine,California
+CUST0176,Patrick Castillo,Nashville,Tennessee
+CUST0177,Mary Young,San Diego,California
+CUST0178,Gregory Richardson,Modesto,California
+CUST0179,Samuel Nguyen,Virginia Beach,Virginia
+CUST0180,Frank Baker,Sacramento,California
+CUST0181,James Lopez,Riverside,California
+CUST0182,Edward Powell,St. Petersburg,Florida
+CUST0183,Nicole Powell,St. Louis,Missouri
+CUST0184,Janet Perez,Pittsburgh,Pennsylvania
+CUST0185,Helen Lee,St. Paul,Minnesota
+CUST0186,Katherine Young,Jacksonville,Florida
+CUST0187,Robert Mendoza,Fort Worth,Texas
+CUST0188,Emily Lewis,Irvine,California
+CUST0189,Alexander Brown,Seattle,Washington
+CUST0190,Betty Myers,Columbus,Ohio
+CUST0191,Margaret Robinson,Lubbock,Texas
+CUST0192,Jonathan Walker,Richmond,Virginia
+CUST0193,Jerry Gonzalez,Modesto,California
+CUST0194,Barbara Evans,Honolulu,Hawaii
+CUST0195,Benjamin Powell,Anchorage,Alaska
+CUST0196,Anna Thomas,Scottsdale,Arizona
+CUST0197,Paul Baker,Aurora,Colorado
+CUST0198,Rachel Castillo,Lincoln,Nebraska
+CUST0199,Samuel Ramos,Washington,DC
+CUST0200,Sarah Mendoza,Rochester,New York
+CUST0201,Christopher Nguyen,Atlanta,Georgia
+CUST0202,Laura James,Montgomery,Alabama
+CUST0203,Sarah Kelly,Houston,Texas
+CUST0204,David Jimenez,Stockton,California
+CUST0205,John Martinez,Greensboro,North Carolina
+CUST0206,Timothy James,St. Louis,Missouri
+CUST0207,Rachel Evans,Toledo,Ohio
+CUST0208,Richard Howard,Indianapolis,Indiana
+CUST0209,Benjamin Cooper,Philadelphia,Pennsylvania
+CUST0210,Jennifer Chavez,Philadelphia,Pennsylvania
+CUST0211,Frank Perez,Phoenix,Arizona
+CUST0212,Donna Collins,St. Louis,Missouri
+CUST0213,Alexander Taylor,Anchorage,Alaska
+CUST0214,Christopher Flores,Houston,Texas
+CUST0215,Helen Ross,North Las Vegas,Nevada
+CUST0216,Stephen Peterson,Lexington,Kentucky
+CUST0217,Brandon Sanchez,San Francisco,California
+CUST0218,Angela Rodriguez,Tacoma,Washington
+CUST0219,Carol Edwards,Fresno,California
+CUST0220,Nicholas Ramos,New York,New York
+CUST0221,Sandra Sanchez,Spokane,Washington
+CUST0222,Samantha Price,Chandler,Arizona
+CUST0223,Amy Morris,Seattle,Washington
+CUST0224,Steven Cooper,Rochester,New York
+CUST0225,Ronald Lee,Chesapeake,Virginia
+CUST0226,George Adams,Austin,Texas
+CUST0227,Jerry Mitchell,Kansas City,Missouri
+CUST0228,Laura Adams,Anchorage,Alaska
+CUST0229,Paul Wilson,El Paso,Texas
+CUST0230,Catherine Ramirez,Shreveport,Louisiana
+CUST0231,Janet Rodriguez,Richmond,Virginia
+CUST0232,Amanda Ortiz,Albuquerque,New Mexico
+CUST0233,Larry Morris,New Orleans,Louisiana
+CUST0234,Timothy Jenkins,Henderson,Nevada
+CUST0235,Thomas Wood,Los Angeles,California
+CUST0236,Karen James,Irving,Texas
+CUST0237,Anthony Peterson,North Las Vegas,Nevada
+CUST0238,Jessica Kelly,Honolulu,Hawaii
+CUST0239,Amanda Kelly,Fresno,California
+CUST0240,Patricia Campbell,Newark,New Jersey
+CUST0241,Michelle Adams,Fort Wayne,Indiana
+CUST0242,Kimberly Watson,San Antonio,Texas
+CUST0243,Daniel Martinez,Jacksonville,Florida
+CUST0244,Donna Green,Jacksonville,Florida
+CUST0245,Paul Chavez,Riverside,California
+CUST0246,Melissa Price,Las Vegas,Nevada
+CUST0247,Nicole Ramirez,Birmingham,Alabama
+CUST0248,Kenneth Gonzalez,Spokane,Washington
+CUST0249,Samantha Green,Bakersfield,California
+CUST0250,Larry Perez,Montgomery,Alabama
+CUST0251,Catherine Martin,North Las Vegas,Nevada
+CUST0252,Daniel Reed,Virginia Beach,Virginia
+CUST0253,Michael Campbell,Aurora,Colorado
+CUST0254,Heather Myers,Honolulu,Hawaii
+CUST0255,Brenda James,San Jose,California
+CUST0256,Frank Harris,Norfolk,Virginia
+CUST0257,Thomas Ramos,Raleigh,North Carolina
+CUST0258,Timothy Parker,Minneapolis,Minnesota
+CUST0259,Michelle Nguyen,Dallas,Texas
+CUST0260,Daniel Davis,Austin,Texas
+CUST0261,Richard Thompson,Rochester,New York
+CUST0262,Janet Gonzalez,Corpus Christi,Texas
+CUST0263,Michelle Chavez,Indianapolis,Indiana
+CUST0264,Margaret Howard,Omaha,Nebraska
+CUST0265,Melissa Torres,Chicago,Illinois
+CUST0266,Frank Patel,Louisville,Kentucky
+CUST0267,Nicole Gutierrez,Aurora,Colorado
+CUST0268,Steven Jackson,Henderson,Nevada
+CUST0269,Stephanie Phillips,Birmingham,Alabama
+CUST0270,Carol Sanchez,San Antonio,Texas
+CUST0271,Nicole Roberts,Philadelphia,Pennsylvania
+CUST0272,Larry Powell,Corpus Christi,Texas
+CUST0273,Andrew Hughes,Long Beach,California
+CUST0274,Patrick Turner,Shreveport,Louisiana
+CUST0275,Nancy Mendoza,Des Moines,Iowa
+CUST0276,Ryan Thompson,Denver,Colorado
+CUST0277,Ryan Williams,Colorado Springs,Colorado
+CUST0278,Sarah Brooks,Stockton,California
+CUST0279,Dorothy Anderson,Chandler,Arizona
+CUST0280,Larry Peterson,Fresno,California
+CUST0281,Emma Wood,Long Beach,California
+CUST0282,Stephen Jimenez,Shreveport,Louisiana
+CUST0283,Catherine Collins,Phoenix,Arizona
+CUST0284,Katherine Cook,Philadelphia,Pennsylvania
+CUST0285,Brenda Morris,Houston,Texas
+CUST0286,Betty Collins,Indianapolis,Indiana
+CUST0287,Joshua Walker,Irvine,California
+CUST0288,Christopher Rivera,Des Moines,Iowa
+CUST0289,Andrew Jimenez,Charlotte,North Carolina
+CUST0290,Justin Watson,Richmond,Virginia
+CUST0291,John Perry,Omaha,Nebraska
+CUST0292,Benjamin Nguyen,Milwaukee,Wisconsin
+CUST0293,David Kelly,Durham,North Carolina
+CUST0294,Melissa Hall,Lincoln,Nebraska
+CUST0295,Ashley Walker,Phoenix,Arizona
+CUST0296,Betty Williams,Houston,Texas
+CUST0297,Brandon Peterson,Hialeah,Florida
+CUST0298,Barbara Parker,Des Moines,Iowa
+CUST0299,Patricia Powell,Des Moines,Iowa
+CUST0300,Catherine Hall,Hialeah,Florida
+CUST0301,Raymond Alvarez,North Las Vegas,Nevada
+CUST0302,Jonathan Rogers,St. Louis,Missouri
+CUST0303,Brian Taylor,Winston-Salem,North Carolina
+CUST0304,Richard Myers,Chandler,Arizona
+CUST0305,James Green,Modesto,California
+CUST0306,Cynthia Reed,Chicago,Illinois
+CUST0307,Richard Murphy,North Las Vegas,Nevada
+CUST0308,Daniel Murphy,San Antonio,Texas
+CUST0309,Joshua Allen,Bakersfield,California
+CUST0310,Dennis Flores,Rochester,New York
+CUST0311,Deborah Flores,Anaheim,California
+CUST0312,Maria Watson,Dallas,Texas
+CUST0313,John Jones,Raleigh,North Carolina
+CUST0314,Ryan Miller,Montgomery,Alabama
+CUST0315,Richard Johnson,Fresno,California
+CUST0316,Samuel Edwards,Newark,New Jersey
+CUST0317,Edward Nguyen,Bakersfield,California
+CUST0318,Charles Chavez,Sacramento,California
+CUST0319,Amy Cooper,Henderson,Nevada
+CUST0320,Amanda Bennett,Lexington,Kentucky
+CUST0321,Andrew Edwards,Irvine,California
+CUST0322,Debra Hall,San Bernardino,California
+CUST0323,Mark White,Irvine,California
+CUST0324,Ronald Sanchez,Anchorage,Alaska
+CUST0325,William Mendoza,Sacramento,California
+CUST0326,Jason Chavez,Arlington,Texas
+CUST0327,Mary Williams,Minneapolis,Minnesota
+CUST0328,Katherine White,St. Louis,Missouri
+CUST0329,Rebecca Torres,Portland,Oregon
+CUST0330,Jeffrey Myers,Chesapeake,Virginia
+CUST0331,Dorothy Ruiz,Fort Worth,Texas
+CUST0332,Betty Smith,Austin,Texas
+CUST0333,Jessica Jones,Aurora,Illinois
+CUST0334,Jerry Long,Birmingham,Alabama
+CUST0335,Jonathan Martin,Anaheim,California
+CUST0336,Angela Jackson,Indianapolis,Indiana
+CUST0337,Anthony Anderson,Fort Worth,Texas
+CUST0338,Donna Roberts,Chicago,Illinois
+CUST0339,Scott Ramirez,Plano,Texas
+CUST0340,Melissa Foster,Spokane,Washington
+CUST0341,Edward Campbell,Los Angeles,California
+CUST0342,Jonathan Nguyen,Jersey City,New Jersey
+CUST0343,Nicholas Murphy,San Antonio,Texas
+CUST0344,Jerry Edwards,Anaheim,California
+CUST0345,George Parker,Baton Rouge,Louisiana
+CUST0346,Michelle King,Garland,Texas
+CUST0347,Karen Brooks,Oklahoma City,Oklahoma
+CUST0348,Jason Foster,Baltimore,Maryland
+CUST0349,Kenneth Powell,Omaha,Nebraska
+CUST0350,Donna Edwards,Minneapolis,Minnesota

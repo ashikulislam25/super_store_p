@@ -1,0 +1,33 @@
+Product ID,Product Name,Category,Price (BDT)
+P001,Basmati Rice (5kg),Grocery Essentials,320
+P002,Wheat Flour (2kg),Grocery Essentials,85
+P003,Mustard Oil (1L),Grocery Essentials,180
+P004,Lentils (Red) (1kg),Grocery Essentials,110
+P005,Sugar (1kg),Grocery Essentials,65
+P006,Salt (Iodized) (1kg),Grocery Essentials,30
+P007,Chickpea (1kg),Grocery Essentials,95
+P008,Soybean Oil (1L),Grocery Essentials,155
+P009,Tomato (1kg),Fresh Produce,40
+P010,Potato (1kg),Fresh Produce,35
+P011,Onion (1kg),Fresh Produce,55
+P012,Spinach (500g),Fresh Produce,25
+P013,Carrot (1kg),Fresh Produce,60
+P014,Bitter Gourd (500g),Fresh Produce,30
+P015,Green Chilli (250g),Fresh Produce,20
+P016,Full Cream Milk (1L),Dairy & Frozen Food,75
+P017,Yogurt (500g),Dairy & Frozen Food,60
+P018,Butter (200g),Dairy & Frozen Food,120
+P019,Cheese Slice (200g),Dairy & Frozen Food,145
+P020,Frozen Chicken Nuggets (400g),Dairy & Frozen Food,210
+P021,Ice Cream (Vanilla 500ml),Dairy & Frozen Food,180
+P022,Shampoo (200ml),Personal Care,130
+P023,Toothpaste (100g),Personal Care,65
+P024,Body Lotion (250ml),Personal Care,175
+P025,Hand Wash (250ml),Personal Care,90
+P026,Shaving Cream (100g),Personal Care,85
+P027,Dish Wash Liquid (500ml),Household Supplies,95
+P028,Laundry Detergent (1kg),Household Supplies,140
+P029,Toilet Cleaner (500ml),Household Supplies,80
+P030,Broom (Standard),Household Supplies,120
+P031,Garbage Bags (30pcs),Household Supplies,55
+P032,Glass Cleaner (500ml),Household Supplies,110
