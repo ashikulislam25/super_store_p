@@ -333,3 +333,93 @@ on o.product_id=p.product_id
 group by 1
 order by 3 desc;
 ```
+## 6. 🧠 Advanced Analysis
+**RFM Analysis (Customer Segmentation)**
+RFM stands for **Recency**, **Frequency**, and **Monetary** — a proven model for customer segmentation.
+```sql
+with ref_table as(
+select  max(order_date) as ref_date from orders),
+rfm as (
+select 
+customer_id,
+datediff(r.ref_date,max(order_date)) as recency,
+count(distinct order_id) as fequency,
+sum(total_amount) as monetary
+from orders o
+cross join ref_table r
+group by 1,r.ref_date),
+final_rfm as (
+select 
+customer_id,
+recency,
+fequency,
+monetary,
+ntile(5) over(order by recency desc) as r_recency,
+ntile(5) over(order by fequency asc) as r_fequency,
+ntile(5) over(order by monetary asc) as r_monetary
+from rfm),
+rfm_combination as (
+select 
+	r.*,
+    R_recency + r_fequency + r_monetary AS TOTAL_RFM_SCORE, 
+    concat_ws('', r_recency,r_fequency,r_monetary) as rfm_combination 
+from final_rfm r)  
+
+select
+customer_id,
+recency,
+fequency,
+monetary,
+TOTAL_RFM_SCORE,
+rfm_combination,
+ CASE
+		WHEN RFM_COMBINATION IN (455, 515, 542, 544, 552, 553, 452, 545, 554, 555) THEN "Champions"
+        WHEN RFM_COMBINATION IN (344, 345, 353, 354, 355, 443, 451, 342, 351, 352, 441, 442, 444, 445, 453, 454, 541, 543, 515, 551) THEN 'Loyal Customers'
+        WHEN RFM_COMBINATION IN (513, 413, 511, 411, 512, 341, 412, 343, 514) THEN 'Potential Loyalists'
+        WHEN RFM_COMBINATION IN (414, 415, 214, 211, 212, 213, 241, 251, 312, 314, 311, 313, 315, 243, 245, 252, 253, 255, 242, 244, 254) THEN 'Promising Customers'
+        WHEN RFM_COMBINATION IN (141, 142,143,144,151,152,155,145,153,154,215) THEN 'Needs Attention'
+        WHEN RFM_COMBINATION IN (113, 111, 112, 114, 115) THEN 'About to Sleep'
+        ELSE "Other"
+        END AS CUSTOMER_SEGMENT
+from rfm_combination c;
+```
+## Cohort Analysis (Customer Retention)
+Tracks how many customers return month after month since their first purchase.
+```sql
+WITH BASE_DATA AS (
+    SELECT
+        CUSTOMER_ID,
+		ORDER_DATE,
+        MIN(order_date) OVER (PARTITION BY CUSTOMER_ID) AS FIRST_TRANSACTION_DATE
+    FROM Orders
+  ),
+COHORT_CALC AS (
+    SELECT 
+        DATE_FORMAT(FIRST_TRANSACTION_DATE, '%Y-%m-01') AS COHORT,
+        CUSTOMER_ID,
+        -- মাস গণনা করার জন্য DATEDIFF ব্যবহার করে তাকে ৩০ দিয়ে ভাগ করা হয়েছে
+       CONCAT('Month_', 
+            (YEAR(ORDER_DATE) - YEAR(FIRST_TRANSACTION_DATE)) * 12 + 
+            (MONTH(ORDER_DATE) - MONTH(FIRST_TRANSACTION_DATE))
+        ) AS COHORT_MONTH
+    FROM BASE_DATA
+)
+SELECT
+    COHORT,
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_0' THEN CUSTOMER_ID END) AS "MONTH_0",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_1' THEN CUSTOMER_ID END) AS "MONTH_1",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_2' THEN CUSTOMER_ID END) AS "MONTH_2",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_3' THEN CUSTOMER_ID END) AS "MONTH_3",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_4' THEN CUSTOMER_ID END) AS "MONTH_4",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_5' THEN CUSTOMER_ID END) AS "MONTH_5",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_6' THEN CUSTOMER_ID END) AS "MONTH_6",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_7' THEN CUSTOMER_ID END) AS "MONTH_7",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_8' THEN CUSTOMER_ID END) AS "MONTH_8",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_9' THEN CUSTOMER_ID END) AS "MONTH_9",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_10' THEN CUSTOMER_ID END) AS "MONTH_10",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_11' THEN CUSTOMER_ID END) AS "MONTH_11",
+    COUNT(DISTINCT CASE WHEN COHORT_MONTH = 'Month_12' THEN CUSTOMER_ID END) AS "MONTH_12"
+FROM COHORT_CALC
+GROUP BY COHORT
+ORDER BY COHORT;
+```
